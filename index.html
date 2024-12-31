@@ -2,16 +2,134 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Heather's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="boxicons.min.css">  
 </head>
+
 <body>
   <h1>Getting Started - Heather's Site</h1>
-    <ul>
-      <li>Home</li>
-      <li>About</li>
-      <li>Programming Projects</li>
-      <li>Graphics</li>
-      <li>Contact</li>
-    </ul>
+    <nav>
+      <a href="" class="logo">Heather</a>
+
+      <ul class="menu">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Programs</a></li>
+        <li><a href="">Graphics</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!----- home section ---->
+
+    <section id="home">
+      <div class="home-text">
+        <h1>Hello World!<br>It's me!<span> ... Heather</span><br>Your Friendly Neighborhood Webhead!</h1>
+        <a href="">Let's talk!</a>
+      </div>
+      <div class = "home-img">
+        <img src="images/Heather Memoji.jpg" alt="">
+      </div>
+    </section>
+
+    <!---- about section ---->
+
+    <section id="about">
+      <div class="heading">
+        <h2>About</h2>
+        <p> My Introduction</p>
+      </div>
+      <div class="about-content">
+        <div class="about-img">
+          <img src="images/Heather Memoji.jpg" alt="">
+        </div>
+        <div class="about-text">
+          <h1>I'm Heather</h1>
+          <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda distinctio error incidunt quae in omnis tenetur nisi rerum harum libero fugiat exercitationem, provident obcaecati, officia nam? Vel illum non quo.</p>
+          <a href="">Download my resume!</a>
+        </div>    
+      </div> 
+    </section>
+
+
+    <!----  Programs Section  ----->
+    
+    <section id="services">
+      <div class="heading">
+          <h2>Services</h2>
+          <p>Services We Offer, This is a placeholder for my program links or something like that. Maybe a good place to list experience in more detail</p>
+      </div>
+      <div class="services-content">
+        <div class="box">
+          <img src="images/Heather Memoji.jpg" alt="">
+          <h1>HTML & CSS</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus distinctio dicta earum velit unde nam inventore error exercitationem praesentium placeat reprehenderit eligendi ipsa explicabo blanditiis aut iste, similique vitae quos.</p>
+        </div>
+        <div class="box">
+          <img src="images/Heather Memoji.jpg" alt="">
+          <h1>Javascript</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus distinctio dicta earum velit unde nam inventore error exercitationem praesentium placeat reprehenderit eligendi ipsa explicabo blanditiis aut iste, similique vitae quos.</p>
+        </div>
+        <div class="box">
+          <img src="images/Heather Memoji.jpg" alt="">
+          <h1>WordPress</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus distinctio dicta earum velit unde nam inventore error exercitationem praesentium placeat reprehenderit eligendi ipsa explicabo blanditiis aut iste, similique vitae quos.</p>
+        </div>
+        <div class="box">
+          <img src="images/Heather Memoji.jpg" alt="">
+          <h1>APIS</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus distinctio dicta earum velit unde nam inventore error exercitationem praesentium placeat reprehenderit eligendi ipsa explicabo blanditiis aut iste, similique vitae quos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Section --->
+
+    <section id="work">
+      <div class="heading work-heading">
+        <h2>Work</h2>
+        <p>Work With Us</p>
+      </div>
+
+      <div class="work-content">
+        <div class="work-text">
+          <h1>We Deliver the best<br> Quality Work</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo alias commodi odit expedita aut! Tempora voluptate beatae error. Odio, error! Magnam libero culpa sint quae? Modi maxime nam sit aspernatur?</p>
+          <a href="">Contact</a>
+        </div>
+
+        <div classs="work-img">
+          <img src="images/Heather Memoji.jpg" alt="">
+        </div>
+
+      </div>
+
+  <!-- Contact section ----->
+
+  <section id="contact">
+    <div class="heading color">
+      <h2> Contact</h2>
+      <p> Leave a message.  We will try to reply</p>
+    </div>
+    
+    <div class="contact-content">
+      <div class="app">
+        <h1>Connect With Us <br> By our Apps</h1>
+        <a href=""><i class="bx bxl-play-store"></i></a>
+        <a href=""><i class="bx bxl-apple"></i></a>
+      </div>
+      <div class="contact-form">
+          <form action="" id="contact-form" class="contact-form">
+              <input type="text" id="name" placeholder="Your Name">
+              <input type="email" id="email" placeholder="Enter your Email">
+              <textarea name="message" id="message" rows="10" cols="30" placeholder="Tell us more"></textarea>
+              <input type="text" value="Send" class="send-button">  
+          </form>
+          <p id="feedback-message" class="feedback"></p>
+      </div>      
+    </div>
+  </section>
+
 </body>
 </html>
