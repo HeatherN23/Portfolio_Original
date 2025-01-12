@@ -107,7 +107,7 @@ ul li a:hover {
   letter-spacing: 1px;
 }
 
-home-text a:hover{
+.home-text a:hover {
   background: var(--second-color);
   box-shadow: 0 10px 34px rgba(0, 0, 0, 0.14);
 }
@@ -283,7 +283,7 @@ home-text a:hover{
   letter-spacing: 1px;
 }
 
-.woek-text a:hover {
+.work-text a:hover {
   background: var(--second-color);
   box-shadow: 0 10px 34px rgba(0, 0, 0, 0.14);
 }
@@ -300,3 +300,210 @@ home-text a:hover{
   object-fit: contain;
   object-position: center;
 }
+
+/*----  Contact Section ----*/
+
+.color h2 {
+  color: #ffffff;
+  border-bottom: 3px solid #ffffff;
+  font-size: 1.8rem;
+}
+
+.color p {
+  color:#ffffff;
+}
+
+#contact {
+  background: var(--second-color);
+}
+
+.contact-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 360px;
+  margin-top: 4rem;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  font-size: 13px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  margin-bottom: 12px;
+}
+
+.contact-form form input::placeholder,
+.contact-form form textarea::placeholder {
+  color: var(--second-color);
+  letter-spacing: 1px;
+}
+
+.contact-form form textarea{
+  height: 200px;
+  resize: none;
+}
+
+.send-button {
+  max-width: 100px;
+  font-weight: 600;
+  background: var(--main-color);
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.feedback {
+  color: #fff;
+}
+
+.app {
+  max-width: 360px;
+}
+
+/* Not it use currently */
+.app h1 {
+  color: #ffff;
+  font-size: 1.6rem;
+  margin: 5px 0 24px;
+}
+
+.app i {
+  color: var(--main-color);
+  font-size: 45px;
+  margin-right: 10px;
+}
+
+.app i:hover {
+  transform: translateY(-10px);
+  transition: 0.5s;
+}
+/* end app section */
+
+.copyright {
+  padding: 20px;
+  background: var(--second-color);
+  color: #fff;
+  text-align:center;
+}
+
+/*---- Responsive Section ----*/
+
+@media (max-width: 991px) {
+  nav {
+    padding: 10px 50px;
+  }
+
+  #home {
+    padding: 50px 20px;
+    flex-direction: column;
+  }
+
+  .home-text { 
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .home-text h1 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+
+  .home-img {
+    max-width: 100%;
+    margin-top:  30px;
+  }
+
+  section {
+    padding: 50px 20px;
+  }
+
+  .about-content,
+  .services-content,
+  .work-content,
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .about-img,
+  .work-img {
+    max-width: 100%;
+  }
+
+  .about-text,
+  .work-text,
+  .services-content .box,
+  .app {
+    max-width:100%;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 800px ) {
+  nav {
+    padding: 10px 20px;
+  }
+  section {
+    padding: 30px 10px;
+  }
+}
+
+@media (max-width:360px) {
+  nav {
+    padding: 10px 10px;
+  }
+  #homne {
+    padding:20px 10px;
+  }
+
+  .home-text h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .about-text h1,
+  .work-text h1 {
+    font-size: 1.2rem;
+  }
+
+  .about-text p,
+  .work-text p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .toggle {
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: #fff;
+  }
+
+  .menu.active {
+    display:flex;
+  }
+
+    .menu li {
+      width:100%;
+      text-align: center;
+    }
+  }
+
+
