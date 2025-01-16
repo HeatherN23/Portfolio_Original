@@ -9,8 +9,8 @@
 }
 
 :root {
-  --main-color: #f5b041;
-  --second-color: #212f3d;
+  --main-color: #136f7d;
+  --second-color: #002c37;
 }
 
 section {
@@ -137,7 +137,7 @@ ul li a:hover {
 
 .heading h2 {
   color: var(--second-color);
-  border-bottom: 3ps soldi var(--second-color);
+  border-bottom: 3px solid var(--second-color);
   font-size: 1.8rem;
 }
 
@@ -220,8 +220,15 @@ ul li a:hover {
   cursor: pointer;
 }
 
+.box a {
+  color:#ffffff;
+}
+.box a:visited { 
+  color: #8aed07}
+
 .box img {
   height: 45px;
+  margin-bottom: .75rem;
 }
 .box h1 {
   font-size: 1.3rem;
