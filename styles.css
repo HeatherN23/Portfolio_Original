@@ -83,10 +83,10 @@ ul li a:hover {
 
 .home-text h1 {
   color: var(--second-color);
-  font-size: 3.5rem;
-  font-weight:700;
-  margin-bottom: 2.5rem;
-  line-height: 5.5rem;
+  font-size: 2rem;
+  font-weight:600;
+  margin-bottom: 1rem;
+  line-height: 2.5rem;
 }
 
 .home-text span {
@@ -100,7 +100,7 @@ ul li a:hover {
 }
 
 .home-text a {
-  padding: 12px 34px;
+  padding: 10px 34px;
   background: var(--main-color);
   color: #ffffff;
   border-radius:10px;
@@ -112,7 +112,8 @@ ul li a:hover {
   background: var(--second-color);
   box-shadow: 0 10px 34px rgba(0, 0, 0, 0.14);
 }
-
+ 
+/* Currently not in use -- >
 .social {
   position: absolute;
   display:flex;
@@ -129,6 +130,8 @@ ul li a:hover {
 .social i:hover {
   color: var(--main-color);
 }
+*/
+
 
 .heading {
   display:flex;
@@ -145,6 +148,7 @@ ul li a:hover {
 .heading p {
   color: var(--second-color);
   margin-top: 0.5rem;
+  line-height: 1.5rem;
 }
 
 /* --- about section ----*/
@@ -181,10 +185,10 @@ ul li a:hover {
 }
 
 .about-text p {
-  color: var(psecond-color);
+  color: var(second-color);
   margin: 5px 0 24px;
   text-align: justify;
-  line-height: 1.8 rem;
+  line-height: 1.5rem;
 }
 
 .about-text a {
@@ -204,14 +208,14 @@ ul li a:hover {
 
 /* -----  Programs Section-----*/
 
-.services-content {
+.projects-content {
   display:flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.services-content .box {
+.projects-content .box {
   padding: 40px 20px;
   background: var(--second-color);
   color: #ffffff;
@@ -241,7 +245,7 @@ ul li a:hover {
   font-weight: 300;
 }
 
-.services-content .box:hover {
+.projects-content .box:hover {
   transform: translateY(-10px);
   background: var(--main-color);
   transition: 0.5s;
@@ -264,7 +268,7 @@ ul li a:hover {
 .work-text {
   width: 100%;
   max-width: 500px;
-  text-align: center;
+  text-align: center;  
 }
 
 .work-text h1 {
@@ -277,9 +281,9 @@ ul li a:hover {
 .work-text p {
   font-size: 1rem;
   color: var(--second-color);
-  line-height:  2rem;
+  line-height:  1.5rem;
   text-align: justify;
-  margin: 5px 0px 18px;
+  margin: 5px 0px 24px;
 }
 
 .work-text a {
@@ -306,7 +310,7 @@ ul li a:hover {
   width: 100%;
   height: auto;
   object-fit: contain;
-  object-position: center;
+  object-position: center;  
 }
 
 /*----  Contact Section ----*/
