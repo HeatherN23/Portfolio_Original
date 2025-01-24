@@ -124,21 +124,26 @@
     <div class="contact-content">      
       <div class="heading contact-text">
         <h2>Contact</h2>
-        <p> Leave a message.<br>  We will try to reply in 24 hours.</p>
+        <p>Please leave a message.<br>I will try to reply within 24 hours.</p>
       </div>
       <!--<div class="app">
         <h1>Connect With Us <br> By Our Apps</h1>
         <a href=""><i class="bx bxl-play-store"></i></a>
         <a href=""><i class="bx bxl-apple"></i></a> 
       </div>-->
-      <div class="contact-form">
-          <form action="" id="contact-form" class="contact-form">
-              <input type="text" id="name" placeholder="Your Name">
-              <input type="email" id="email" placeholder="Enter your Email">
-              <textarea name="message" id="message" rows="10" cols="30" placeholder="Tell me more"></textarea>
-              <input type="text" value="Send" class="send-button">  
+      <div class="contact-form">        
+          <form action="mailto:hmnygaard2@gmail.com" method="post" enctype="text/plain" id="contact-form" class="contact-form">
+              <input type="text" id="name" name="name" placeholder="Your Name">
+              <input type="email" id="email" name="email" placeholder="Your Email">
+              <input type="text" id="subject" name="subject" placeholder="Subject">
+              <textarea  id="message" name="message" rows="10" cols="30" placeholder="Your Message"></textarea>
+              <input type="submit" value="Send" class="send-button">  
+              <input type="reset" value="Clear" class="send-button">
           </form>
-          <p id="feedback-message" class="feedback"></p>
+          <!-- Add feedback message via javascript later 
+           1. if fields are empty, display error
+           2. Upon successful submission, display a freindly success message.-->
+          <!-- <p id="feedback-message" class="feedback">Thanks for reaching out!  I'll be in touch!</p>-->
       </div>      
     </div>
   </section>

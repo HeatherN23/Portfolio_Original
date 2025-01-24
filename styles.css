@@ -410,6 +410,7 @@ ul li a:hover {
   width: 100%;
   max-width: 560px;
   margin-top: 1rem;
+  margin-bottom: .5rem;;
 }
 
 .contact-form form input,
