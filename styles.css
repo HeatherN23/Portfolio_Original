@@ -21,11 +21,12 @@ section {
 #home {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 70vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  /*background-color: aqua;*/
 }
 
 /* ---- navbar section ---- */
@@ -137,6 +138,9 @@ ul li a:hover {
   display:flex;
   flex-direction: column;
   align-items: center;
+ /* background-color: #8aed07;*/
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .heading h2 {
@@ -147,17 +151,28 @@ ul li a:hover {
 
 .heading p {
   color: var(--second-color);
-  margin-top: 0.5rem;
-  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  line-height: 2rem;
 }
 
 /* --- about section ----*/
+
+#about {  
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; 
+  /*background-color: aqua;*/
+  padding-top: 2%;
+  padding-bottom: 2%;
+
+}
 
 .about-content {
   display:flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
 .about-img {
@@ -176,19 +191,20 @@ ul li a:hover {
 .about-text {
   max-width: 500px;
   justify-content: center;
-  text-align: center;
+  text-align: center;  
 }
 
 .about-text h1 {
   font-size: 1.5rem;
   color: var(--second-color);
+  margin-bottom: 5%;
 }
 
 .about-text p {
-  color: var(second-color);
+  color: var(--second-color);
   margin: 5px 0 24px;
   text-align: justify;
-  line-height: 1.5rem;
+  line-height: 2rem;
 }
 
 .about-text a {
@@ -207,6 +223,15 @@ ul li a:hover {
 
 
 /* -----  Programs Section-----*/
+
+#projects {  
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; 
+  /*background-color: aqua;*/
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
 
 .projects-content {
   display:flex;
@@ -254,31 +279,40 @@ ul li a:hover {
 
 /*--- work section ----*/
 
-.work-heading{
+#graphics {  
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; 
+  /*background-color: aqua;*/
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.graphics-heading{
   margin-bottom: 2.5rem;
 }
 
-.work-content {
+.graphics-content {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.work-text {
+.graphics-text {
   width: 100%;
   max-width: 500px;
   text-align: center;  
 }
 
-.work-text h1 {
+.graphics-text h1 {
   font-size: 1.5rem;
   color: var(--second-color);
   line-height: 2.4rem;
   letter-spacing: 1px;
 }
 
-.work-text p {
+.graphics-text p {
   font-size: 1rem;
   color: var(--second-color);
   line-height:  1.5rem;
@@ -286,7 +320,7 @@ ul li a:hover {
   margin: 5px 0px 24px;
 }
 
-.work-text a {
+.graphics-text a {
   padding: 12px 24px;
   background: var(--main-color);
   color: #ffffff;
@@ -295,18 +329,18 @@ ul li a:hover {
   letter-spacing: 1px;
 }
 
-.work-text a:hover {
+.graphics-text a:hover {
   background: var(--second-color);
   box-shadow: 0 10px 34px rgba(0, 0, 0, 0.14);
 }
 
-.work-img {
+.graphics-img {
   width: 100%;
   max-width: 320px;
   height: auto;
 }
 
-.work-img img {
+.graphics-img img {
   width: 100%;
   height: auto;
   object-fit: contain;
@@ -325,8 +359,20 @@ ul li a:hover {
   color:#ffffff;
 }
 
+/*
 #contact {
   background: var(--second-color);
+}
+*/
+
+#contact {  
+  background: var(--second-color);
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;   
+  /*background-color: aqua;*/
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .contact-content {
@@ -448,7 +494,7 @@ ul li a:hover {
 
   .about-img,
   .work-img {
-    max-width: 100%;
+    max-width: 30%;
   }
 
   .about-text,
